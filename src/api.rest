@@ -1,0 +1,29 @@
+### 
+
+GET http://localhost:8000/api/products/
+
+### 
+POST http://localhost:8000/api/products/
+Content-Type: application/json
+
+{
+"codigo": "PRB003",
+"nombre": "Margarita", 
+"descripcion": "Descripcion producto 3",
+"precio": 10.30, 
+"cantidad": 10,
+"src": "https://i.pinimg.com/564x/1f/43/34/1f43349760107be29c81d1506c564899.jpg",
+"estado": true
+}
+
+### 
+
+GET http://localhost:8000/api/products/6466849707c2fa7bf07f93e7
+
+###
+PUT http://localhost:8000/api/products/646682753d2e67bfb71c2500
+Content-Type: application/json
+
+{
+ "prb": 7,
+}
