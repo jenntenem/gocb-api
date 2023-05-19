@@ -1,4 +1,5 @@
 const Client = require("../models/client");
+const userController = require("./users.controller");
 
 const clientController = {};
 

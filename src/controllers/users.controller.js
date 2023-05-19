@@ -58,4 +58,18 @@ userController.deleteUser = async (req, res, next) => {
   });
 };
 
+userController.login = async (req, res, next) => {
+  const { nombre, password } = req.body;
+  let [{ id }] = await User.find(nombre, password);
+  const user = await User.findById(id);
+  delete user.password;
+
+  res.json({
+    codigo: 200,
+    error: false,
+    datos: user,
+    message: user ? "User Logged" : "User Not Found",
+  });
+};
+
 module.exports = userController;
