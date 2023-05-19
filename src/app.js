@@ -15,5 +15,7 @@ app.use(express.json());
 // Routes
 app.use("/api/products", require("./routes/products.routes"));
 app.use("/api/clients", require("./routes/clients.routes"));
+app.use("/api/rols", require("./routes/rol.routes"));
+
 
 module.exports = app;
