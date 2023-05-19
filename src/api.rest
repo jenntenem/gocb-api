@@ -30,3 +30,32 @@ Content-Type: application/json
  "estado": "OUTOFSTOCK",
  "cantidad": 0
 }
+
+### 
+
+GET http://localhost:8000/api/clients/
+
+### 
+POST http://localhost:8000/api/clients/
+Content-Type: application/json
+
+ {
+"identificacion": "0956871256",
+"nombre": "Usuario Prb",
+"direccion": "Coop. Mouunt Via 1",
+"telefono": "09632148",
+"correo": "example@example.com",
+"estado_registro": true
+}
+
+### 
+
+GET http://localhost:8000/api/clients/6466d74e63f10256d25c7b1b
+
+###
+PUT http://localhost:8000/api/clients/6466d74e63f10256d25c7b1b
+Content-Type: application/json
+
+{
+ "nombre": "Nombre Cliente Prb"
+}
