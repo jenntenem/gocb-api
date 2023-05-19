@@ -1,5 +1,5 @@
 {
-  "name": "gocb-back",
+  "name": "gocb-api",
   "version": "1.0.0",
   "description": "Sistema de Generar Ordenes de Compra De Bebidas",
   "main": "index.js",
