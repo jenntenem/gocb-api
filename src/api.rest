@@ -7,13 +7,14 @@ POST http://localhost:8000/api/products/
 Content-Type: application/json
 
 {
-"codigo": "PRB003",
-"nombre": "Margarita", 
-"descripcion": "Descripcion producto 3",
-"precio": 10.30, 
-"cantidad": 10,
-"src": "https://i.pinimg.com/564x/1f/43/34/1f43349760107be29c81d1506c564899.jpg",
-"estado": true
+"codigo": "PRB004",
+"nombre": "Nueevo Producto", 
+"descripcion": "Descripcion producto 5",
+"precio": 7, 
+"cantidad": 0,
+"src": "https://i.pinimg.com/564x/86/0a/5d/860a5d0fa94212d0f5473de3a65ec912.jpg",
+"estado_registro": false,
+"estado": "INACTIVO"
 }
 
 ### 
@@ -21,9 +22,11 @@ Content-Type: application/json
 GET http://localhost:8000/api/products/6466849707c2fa7bf07f93e7
 
 ###
-PUT http://localhost:8000/api/products/646682753d2e67bfb71c2500
+PUT http://localhost:8000/api/products/6466849707c2fa7bf07f93e7
 Content-Type: application/json
 
 {
- "prb": 7,
+ "estado_registro": true,
+ "estado": "OUTOFSTOCK",
+ "cantidad": 0
 }

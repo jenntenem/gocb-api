@@ -8,7 +8,8 @@ const productSchema = new Schema(
     precio: { type: Number, required: true },
     cantidad: { type: Number, required: true },
     src: { type: String, required: false },
-    estado: { type: Boolean, required: true },
+    estado: { type: String, required: true },
+    estado_registro: { type: Boolean, required: true },
   },
   {
     timestamps: true,
