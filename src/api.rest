@@ -140,3 +140,29 @@ Content-Type: application/json
       }
     ]
 }
+
+### 
+GET http://localhost:8000/api/users/
+
+### 
+POST http://localhost:8000/api/users/
+Content-Type: application/json
+
+ {
+"user": "0956871256",
+"password": "administrador",
+"estado_registro": true
+}
+
+### 
+
+GET http://localhost:8000/api/users/64671a91b41f405e3492cba4
+
+###
+PUT http://localhost:8000/api/users/64671a91b41f405e3492cba4
+Content-Type: application/json
+
+{
+ "user": "administrador",
+ "password": "12345"
+}
